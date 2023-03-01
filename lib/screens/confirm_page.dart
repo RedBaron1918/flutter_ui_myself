@@ -1,5 +1,7 @@
 import 'dart:ui';
+import 'package:clothe_store/widgets/elevated_button_style.dart';
 import 'package:flutter/material.dart';
+import 'package:clothe_store/screens/home.dart';
 
 class ConfirmPage extends StatefulWidget {
   const ConfirmPage({Key? key}) : super(key: key);
@@ -77,27 +79,25 @@ class _ConfirmPageState extends State<ConfirmPage>
                     "when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
                     style: TextStyle(color: Colors.grey[500]),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 15),
                   Row(
                     children: [
                       Expanded(
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            padding: const EdgeInsets.all(15),
-                            backgroundColor: Colors.deepOrange,
-                          ),
-                          onPressed: () =>
-                              Navigator.pushNamed(context, '/home'),
-                          child: const Text(
-                            'Get Started',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20,
-                              fontWeight: FontWeight.w300,
-                            ),
-                          ),
-                        ),
-                      ),
+                          child: ElevatedButtonStyle(
+                        padding: 15,
+                        callback: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const HomeScreen(),
+                              ));
+                        },
+                        color: Colors.deepOrange,
+                        text: 'Get Started',
+                        size: 20,
+                        textColor: Colors.white,
+                        weight: FontWeight.w400,
+                      )),
                     ],
                   ),
                 ],

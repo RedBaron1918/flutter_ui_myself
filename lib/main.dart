@@ -12,8 +12,8 @@ void main() {
     initialRoute: '/',
     routes: {
       "/": (context) => const ConfirmPage(),
-      "/home": (context) => HomeScreen(),
-      "/product": (context) => ProductScreen(),
+      "/home": (context) => const HomeScreen(),
+      "/product": (context) => const ProductScreen(),
     },
   ));
 }
