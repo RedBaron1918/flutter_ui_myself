@@ -7,6 +7,7 @@ final List<Product> products = [
     price: 100,
     productName: "jacketN1",
     reviews: 20,
+    rating: 4.6,
     sold: 50,
   ),
   Product(
@@ -15,6 +16,7 @@ final List<Product> products = [
     price: 100,
     productName: "jacketN1",
     reviews: 20,
+    rating: 4.6,
     sold: 50,
   ),
   Product(
@@ -23,6 +25,7 @@ final List<Product> products = [
     price: 100,
     productName: "jacketN1",
     reviews: 20,
+    rating: 4.6,
     sold: 50,
   ),
   Product(
@@ -31,6 +34,7 @@ final List<Product> products = [
     price: 100,
     productName: "jacketN1",
     reviews: 20,
+    rating: 4.6,
     sold: 50,
   ),
   Product(
@@ -39,6 +43,7 @@ final List<Product> products = [
     price: 100,
     productName: "jacketN1",
     reviews: 20,
+    rating: 4.6,
     sold: 50,
   ),
   Product(
@@ -47,6 +52,7 @@ final List<Product> products = [
     price: 100,
     productName: "jacketN1",
     reviews: 20,
+    rating: 4.6,
     sold: 50,
   ),
 ];

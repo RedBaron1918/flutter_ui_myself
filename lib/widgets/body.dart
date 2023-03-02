@@ -1,4 +1,7 @@
+import 'package:clothe_store/data/data.dart';
+import 'package:clothe_store/models/products.dart';
 import 'package:clothe_store/widgets/elevated_button_style.dart';
+import 'package:clothe_store/widgets/product_card.dart';
 import 'package:flutter/material.dart';
 import 'package:clothe_store/widgets/stack_image.dart';
 
@@ -72,6 +75,18 @@ class Body extends StatelessWidget {
                     letterSpacing: 1.2),
               )
             ],
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height,
+            child: GridView.builder(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2),
+              itemCount: products.length,
+              itemBuilder: (BuildContext context, int index) {
+                Product test = products[index];
+                return ProductCard(product: test);
+              },
+            ),
           )
         ],
       ),
