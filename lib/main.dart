@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     theme: ThemeData(
-      colorSchemeSeed: Colors.deepOrange,
       useMaterial3: true,
     ),
     initialRoute: '/',

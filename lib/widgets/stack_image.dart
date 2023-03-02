@@ -35,7 +35,9 @@ class StackImage extends StatelessWidget {
               left: 8,
               child: Text(
                 "Monclear",
-                style: TextStyle(color: Color.fromARGB(255, 170, 170, 170)),
+                style: TextStyle(
+                    color: Color.fromARGB(255, 170, 170, 170),
+                    fontWeight: FontWeight.bold),
               ),
             ),
             const Positioned(
@@ -43,11 +45,14 @@ class StackImage extends StatelessWidget {
               left: 8,
               child: Text(
                 "Luxury SportWear",
-                style: TextStyle(color: Colors.white, fontSize: 20),
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
               ),
             ),
             Positioned(
-              bottom: 2,
+              bottom: 6,
               right: 8,
               child: ElevatedButtonStyle(
                 callback: () {},
@@ -55,6 +60,7 @@ class StackImage extends StatelessWidget {
                 color: Colors.deepOrange,
                 text: "View Collection",
                 textColor: Colors.white,
+                weight: FontWeight.w500,
               ),
             ),
           ],

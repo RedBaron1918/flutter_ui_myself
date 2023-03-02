@@ -101,8 +101,13 @@ class _HomeScreenState extends State<HomeScreen> {
               child: const SearchBar(),
             ),
           ),
-          const SliverToBoxAdapter(
-            child: Body(),
+          SliverToBoxAdapter(
+            child: Container(
+              padding: const EdgeInsets.all(3),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10), color: Colors.white),
+              child: const Body(),
+            ),
           )
         ],
       ),
